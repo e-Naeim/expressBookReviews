@@ -1,0 +1,10 @@
+Captured from a fresh clone of https://github.com/e-Naeim/expressBookReviews.git
+
+$ git remote -v
+origin	https://github.com/e-Naeim/expressBookReviews.git (fetch)
+origin	https://github.com/e-Naeim/expressBookReviews.git (push)
+
+$ git log -1 --format=%H%n%s
+4b149f538ff60c1fe7f46de0ca041df9a2ea66a2
+Implement authenticated book reviews API with tested cURL and Axios evidence
+

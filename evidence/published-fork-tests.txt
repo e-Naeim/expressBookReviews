@@ -1,0 +1,33 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> bookshop@1.0.1 test
+> node --test
+
+✔ Task 1: all ten original books are returned (25.426435ms)
+✔ Task 2: ISBN lookup returns its book (3.45631ms)
+✔ Task 3: author lookup returns all matching books (3.333575ms)
+✔ Task 4: title lookup handles encoded spaces and case (1.94635ms)
+✔ Task 5: reviews are public and initially empty (1.971518ms)
+✔ Unknown ISBN, author, title and inherited object keys return 404 (16.875921ms)
+✔ Task 6: registration succeeds and passwords are hashed (51.564906ms)
+✔ Registration rejects missing, invalid, duplicate and unsafe usernames (55.265345ms)
+✔ Concurrent registration cannot create duplicate accounts (48.814012ms)
+✔ Task 7: valid login creates an HttpOnly session cookie (75.528753ms)
+✔ Login rejects bad passwords, unregistered users and missing fields (77.677628ms)
+✔ Anonymous and tampered-cookie clients cannot add or delete reviews (7.535782ms)
+✔ Task 8: add and update only the current user review (82.190285ms)
+✔ Different users keep separate reviews and cannot spoof another username (156.086931ms)
+✔ Task 9: deleting own review preserves another user review (158.551524ms)
+✔ Review validation handles missing, blank, repeated, oversized and unknown book (85.666455ms)
+✔ Eight concurrent users retain separate sessions and reviews (164.457325ms)
+✔ Task 10–13: all four Axios functions make successful concurrent HTTP requests (22.186121ms)
+✔ Axios retrieval helpers propagate failed HTTP requests to the caller (5.741172ms)
+✔ Malformed JSON and unknown routes return structured errors (5.899862ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1267.287093
