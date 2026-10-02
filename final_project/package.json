@@ -1,19 +1,25 @@
 {
   "name": "bookshop",
   "version": "1.0.1",
-  "description": "",
+  "description": "IBM Book Review API with Express, JWT sessions and Axios",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test",
+    "async-demo": "node scripts/async-demo.js",
+    "evidence": "bash scripts/generate-evidence.sh"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.1",
-    "express-session": "^1.17.3",
-    "jsonwebtoken": "^8.5.1",
-    "nodemon": "^2.0.19"
+    "axios": "^1.20.0",
+    "express": "^4.22.3",
+    "express-session": "^1.19.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

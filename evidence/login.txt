@@ -1,0 +1,12 @@
+$ curl --silent --show-error --fail-with-body -c alice-cookies.txt -X POST http://127.0.0.1:5000/customer/login -H Content-Type:\ application/json -d \{\"username\":\"demo_alice\"\,\"password\":\"Synthetic-demo-123\"\} 
+{
+  "message": "Customer successfully logged in.",
+  "username": "demo_alice"
+}
+
+$ curl --silent --show-error --fail-with-body -c bob-cookies.txt -X POST http://127.0.0.1:5000/customer/login -H Content-Type:\ application/json -d \{\"username\":\"demo_bob\"\,\"password\":\"Synthetic-demo-456\"\} 
+{
+  "message": "Customer successfully logged in.",
+  "username": "demo_bob"
+}
+

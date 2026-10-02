@@ -1,0 +1,29 @@
+$ curl --silent --show-error --fail-with-body -b alice-cookies.txt -X PUT http://127.0.0.1:5000/customer/auth/review/1\?review=A%20thoughtful%20and%20powerful%20novel. 
+{
+  "message": "Review successfully added.",
+  "isbn": "1",
+  "reviews": {
+    "demo_alice": "A thoughtful and powerful novel."
+  }
+}
+
+$ curl --silent --show-error --fail-with-body -b bob-cookies.txt -X PUT http://127.0.0.1:5000/customer/auth/review/1\?review=Rich%20characters%20and%20memorable%20storytelling. 
+{
+  "message": "Review successfully added.",
+  "isbn": "1",
+  "reviews": {
+    "demo_alice": "A thoughtful and powerful novel.",
+    "demo_bob": "Rich characters and memorable storytelling."
+  }
+}
+
+$ curl --silent --show-error --fail-with-body -b alice-cookies.txt -X PUT http://127.0.0.1:5000/customer/auth/review/1\?review=Updated%3A%20a%20powerful%20portrait%20of%20culture%20and%20change. 
+{
+  "message": "Review successfully updated.",
+  "isbn": "1",
+  "reviews": {
+    "demo_alice": "Updated: a powerful portrait of culture and change.",
+    "demo_bob": "Rich characters and memorable storytelling."
+  }
+}
+

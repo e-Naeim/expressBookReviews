@@ -1,0 +1,14 @@
+$ curl --silent --show-error --fail-with-body -b alice-cookies.txt -X DELETE http://127.0.0.1:5000/customer/auth/review/1 
+{
+  "message": "Your review was successfully deleted.",
+  "isbn": "1",
+  "reviews": {
+    "demo_bob": "Rich characters and memorable storytelling."
+  }
+}
+
+$ curl --silent --show-error --fail-with-body http://127.0.0.1:5000/review/1 
+{
+  "demo_bob": "Rich characters and memorable storytelling."
+}
+

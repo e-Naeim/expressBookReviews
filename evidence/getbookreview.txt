@@ -1,0 +1,6 @@
+$ curl --silent --show-error --fail-with-body http://127.0.0.1:5000/review/1 
+{
+  "demo_alice": "Updated: a powerful portrait of culture and change.",
+  "demo_bob": "Rich characters and memorable storytelling."
+}
+

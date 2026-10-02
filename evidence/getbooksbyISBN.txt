@@ -1,0 +1,7 @@
+$ curl --silent --show-error --fail-with-body http://127.0.0.1:5000/isbn/1 
+{
+  "author": "Chinua Achebe",
+  "title": "Things Fall Apart",
+  "reviews": {}
+}
+

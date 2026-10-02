@@ -2,3 +2,8 @@
 node_modules
 
 
+# Local credentials, cookies and logs
+.env
+.env.*
+*-cookies.txt
+*.log
